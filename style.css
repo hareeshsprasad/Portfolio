@@ -88,7 +88,8 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    /* background: crimson; */
+    background: rgb(58, 57, 57);
 }
 .navbar .max-width{
     display: flex;
@@ -165,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/background.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -380,7 +381,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "Some of my works";
 }
 .teams .carousel .card{
     background: #222;
