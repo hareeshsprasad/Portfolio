@@ -67,29 +67,29 @@
                         growth of the organization.</p>
                     <a href="index.php?file=Mr.Hareesh P Resume.pdf">Download CV</a>
                     <?php 
-if(!empty($_GET['file']))
-{
-    $filename = basename($_GET['file']);
-    $filepath = 'images/' . $filename;
-    if(!empty($filename) && file_exists($filepath)){
+                    if(!empty($_GET['file']))
+                    {
+                        $filename = basename($_GET['file']);
+                        $filepath = 'images/' . $filename;
+                        if(!empty($filename) && file_exists($filepath)){
 
-//Define Headers
-        header("Cache-Control: public");
-        header("Content-Description: FIle Transfer");
-        header("Content-Disposition: attachment; filename=$filename");
-        header("Content-Type: application/zip");
-        header("Content-Transfer-Emcoding: binary");
+                    //Define Headers
+                            header("Cache-Control: public");
+                            header("Content-Description: FIle Transfer");
+                            header("Content-Disposition: attachment; filename=$filename");
+                            header("Content-Type: application/zip");
+                            header("Content-Transfer-Emcoding: binary");
 
-        readfile($filepath);
-        exit;
+                            readfile($filepath);
+                            exit;
 
-    }
-    else{
-        echo "This File Does not exist.";
-    }
-}
+                        }
+                        else{
+                            echo "This File Does not exist.";
+                        }
+                    }
 
- ?>
+                    ?>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@ if(!empty($_GET['file']))
                     <div class="box">
                         <i class="fas fa-code"></i>
                         <div class="text">Web Development</div>
-                        <p>Develop, maintaining php websites.</p>
+                        <p>Developing, maintaining php websites.</p>
                     </div>
                 </div>
                </div>
@@ -263,20 +263,20 @@ if(!empty($_GET['file']))
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form id="submit-form" action="">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" id="name" name="name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" id="sub" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" id="msg" name="message" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
