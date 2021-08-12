@@ -236,7 +236,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Hey, Do you have a challenging project or do you want to get in touch with feel free to contact me...</p>
+                    <p>Hey, Do you have a challenging project ? Do you want to get in touch with me?Feel free to contact me...</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
